@@ -127,10 +127,10 @@ restartButton.addEventListener("click", () => {
   score = 0;
   gameOver = false;
   history = [];
-
+  if(historyList){
   historyList.innerHTML =
     '<div class="empty">等待游戏开始...</div>';
-
+  } 
   feedbackElement.textContent = "请报出数字 1";
 
   render();
